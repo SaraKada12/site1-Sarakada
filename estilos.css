@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: #fdf5e6;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.imagem-secao {
+    transition: transform 0.3s ease;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.imagem-secao:hover {
+    transform: scale(1.05);
+}
+
+#content {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+#content section {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+#intro {
+    text-align: center;
+    position: relative;
+    background-image: url('Imagens/Asset 1.png');
+}
+
+#intro_container {
+    position: relative;
+}
+
+#intro_texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: left;
+    z-index: 10; 
+    font-family: "Barlow", sans-serif;
+}
+
+.titulo1 {
+    font-family: "EB Garamond", serif;
+    font-size: 140px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+
+.subtitulo {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.subtitulo1 {
+    font-size: 27px;
+    margin-bottom: 5px;
+}
+
+#menu {
+    background: linear-gradient(to right, salmon, #ff7f50);
+    padding: 5px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#nav_menu {
+    text-align: center;
+}
+
+#nav_menu a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    margin: 0 5px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+#nav_menu a:hover,
+#nav_menu a:focus {
+    color: #6200ff;
+}
+
+#apresentacao_do_curso {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 5px 0;
+    min-height: 700px;
+}
+
+#texto {
+    text-align: left;
+    width: 65%;
+}
+
+#imagem {
+    width: 35%;
+    text-align: right;
+}
+
+#acesso {
+    min-height: 750px;
+    padding: 5px 0;
+}
+
+.acesso-item p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.acesso-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.normal_font {
+    font-family: "EB Garamond", serif;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 33px;
+    text-align: justify;
+}
+.acesso-grid p {
+    text-align: justify;
+    font-size: 30px;
+}
+.acesso-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 50px;
+}
+
+.acesso-item img {
+    height: 470px;
+    width: auto;
+    object-fit: cover;
+}
+
+#ciclo_de_Estudos {
+    min-height: 750px;
+    padding: 5px 0;
+}
+
+#saidas_profissionais {
+    min-height: 750px;
+    padding: 5px 0;
+}
+
+.saidas-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 56px;
+    justify-items: center;
+}
+
+.saidas-item {
+    text-align: center;
+}
+
+.saidas-item img {
+    width: auto;
+    height: 300px;
+    object-fit: cover;
+}
+
+#prosseguimento_de_estudos {
+    min-height: 700px;
+    padding: 5px 0;
+    padding-top: 60px;
+}
+
+#prosseguimento_de_estudos ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    list-style: disc;
+    padding-left: 0;
+    margin: 10px 0 0 0;
+    padding-top: 30px;
+}
+
+#prosseguimento_de_estudos li {
+    text-align: left;
+    font-size: 30px;
+}
+
+.banner {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: 800px;
+    display: block;
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.banner-title {
+    margin: 0 0 20px 0;
+    text-align: left;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    font-size: 2rem;
+}
+
+.banner-contacts {
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+}
+
+.banner-contacts .contact {
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    font-size: 1.7rem;
+    font-family: "EB Garamond", serif;
+}
+
+.banner-form {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.banner-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.banner-form input,
+.banner-form textarea {
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.banner-form button {
+    padding: 15px;
+    background-color: rgba(194, 194, 194, 0.2);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 20px;
+}
+
+.banner-form button:hover {
+    background-color: #555;
+}
+
+#contacte {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "EB Garamond", serif;
+}
+
+#apre_ {
+    text-align: center;
+}
+
+
+.slideshow {
+    background-image: url("Imagems/Asset 16.jpg");
+    position: relative;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: slideshow 18s infinite; 
+}
+
+.slide1 {
+    animation-delay: 0s;
+}
+
+.slide2 {
+    animation-delay: 3s;
+}
+
+.slide3 {
+    animation-delay: 6s;
+}
+
+.slide4 {
+    animation-delay: 9s;
+}
+
+@keyframes slideshow {
+    0%, 25% { opacity: 1; } 
+    25.01%, 50% { opacity: 0; }
+    50.01%, 75% { opacity: 0; }
+    75.01%, 100% { opacity: 0; }
+}
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+    .titulo1 {
+        font-size: 100px;
+    }
+    .subtitulo {
+        font-size: 24px;
+    }
+    .subtitulo1 {
+        font-size: 20px;
+    }
+    .acesso-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .saidas-grid {
+        grid-template-columns: 1fr;
+    }
+    .banner-contacts {
+        flex-direction: column;
+        gap
+: 15px;
+    }
+}
+    #conheca a {
+    color: rgb(255, 255, 255);              
+    text-decoration: none;    
+    transition: all 0.3s ease; 
+}
+
+#conheca a:hover {
+    color: #4111ed;            
+    transform: scale(1.1);      
+    text-decoration: underline; 
+}
+
+#saibamais {
+  font-family: "EB Garamond", serif;
+margin-left: 300px;
+margin-bottom: 73px;
+}
+
+.barlow-thin {
+  font-family: "Barlow", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+
+.eb-garamond-300 {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+section {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#nav_menu a {
+  position: relative;
+}
+
+#nav_menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #4111ed;
+  transition: width 0.3s ease;
+}
+
+#nav_menu a:hover::after {
+  width: 100%;
+}
+
+.saidas-item {
+  background: rgba(255, 255, 255, 0.514);
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.banner-form input:focus,
+.banner-form textarea:focus {
+  outline: none;
+  border: 2px solid #4111ed;
+}
